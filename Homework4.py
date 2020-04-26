@@ -47,10 +47,10 @@ def main(keyword):
 		q.queuelist()
 		i = i+1
 		print("I am here")
-		subprocess.call(['ffmpeg', '-y', '-framerate', '.1', '-i', filename, videoname])
+		subprocess.call(['ffmpeg', '-framerate', '.1', '-i', filename, videoname])
 	return print("these are your tweets", tweets)
 
 
 
 if __name__ == '__main__':
-    main()
+    app.run(host=0.0.0.0, port=80)
