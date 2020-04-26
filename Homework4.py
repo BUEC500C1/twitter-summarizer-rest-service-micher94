@@ -53,4 +53,4 @@ def main(keyword):
 
 
 if __name__ == '__main__':
-    main()
+    app.run(port=80)
